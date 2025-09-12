@@ -1,0 +1,41 @@
+{
+  "terms": [
+    {
+      "id": "AI001",
+      "english": "Artificial Intelligence",
+      "italian": "Intelligenza artificiale",
+      "definition": {
+        "en": "A system that can, for a given set of human-defined objectives, make predictions, recommendations, or decisions influencing real or virtual environments.",
+        "it": "Un sistema che, dato un insieme di obiettivi definiti dall’uomo, può formulare previsioni, raccomandazioni o decisioni che influenzano ambienti reali o virtuali."
+      },
+      "sources": [
+        "OECD Recommendation on AI (2019)",
+        "ISO/IEC 22989:2022"
+      ],
+      "relations": {
+        "broader": [],
+        "narrower": ["AI002"],
+        "related": []
+      },
+      "variants": ["AI", "IA"]
+    },
+    {
+      "id": "AI002",
+      "english": "AI Act",
+      "italian": "Regolamento europeo sull’IA",
+      "definition": {
+        "en": "European Union Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence.",
+        "it": "Regolamento dell’Unione Europea (UE) 2024/1689 che stabilisce regole armonizzate sull’intelligenza artificiale."
+      },
+      "sources": [
+        "AI Act, Regulation (EU) 2024/1689"
+      ],
+      "relations": {
+        "broader": ["AI001"],
+        "narrower": [],
+        "related": []
+      },
+      "variants": ["AI Regulation", "Reg. UE IA"]
+    }
+  ]
+}
