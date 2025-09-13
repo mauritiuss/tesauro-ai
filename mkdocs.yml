@@ -10,3 +10,4 @@ nav:
   - Home: index.md
   - Termini:
       - Indice: terms/index.md
+  - Mockup: mockup.md
