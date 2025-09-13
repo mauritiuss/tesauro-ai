@@ -1,0 +1,41 @@
+name: Proposta di aggiornamento voce
+description: Suggerisci una nuova voce o modifica una voce esistente del tesauro.
+labels: ["proposta", "in revisione"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo di richiesta
+      options:
+        - Nuova voce
+        - Modifica voce esistente
+        - Rimozione voce
+    validations:
+      required: true
+  - type: input
+    id: id_voce
+    attributes:
+      label: ID della voce (se esistente)
+      placeholder: Es. AI002
+  - type: textarea
+    id: definizione_it
+    attributes:
+      label: Definizione proposta (IT)
+  - type: textarea
+    id: definizione_en
+    attributes:
+      label: Definizione proposta (EN)
+  - type: textarea
+    id: motivazione
+    attributes:
+      label: Motivazione della proposta
+      description: Spiega perché serve questa modifica
+    validations:
+      required: true
+  - type: textarea
+    id: fonti
+    attributes:
+      label: Fonti a supporto
+      description: Norme, standard o documenti di riferimento
+    validations:
+      required: true
