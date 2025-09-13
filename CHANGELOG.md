@@ -1,6 +1,17 @@
 # Changelog
 
 Tutte le modifiche rilevanti al tesauro sono documentate in questo file.
+Il versionamento segue lo schema **MAJOR.MINOR.PATCH**:
+
+- **MAJOR**: modifiche strutturali o incompatibili (es. cambio formato sorgente).
+- **MINOR**: nuove voci, nuove funzionalità editoriali.
+- **PATCH**: correzioni minori o aggiornamenti a voci esistenti.
+
+## [0.3.0] - 2025-09-13
+### Aggiunto
+- Nuova voce AI004 "Generative AI / IA generativa" con definizione bilingue
+- Fonti NIST e ISO/IEC
+- Relazioni semantiche con AI001 (broader)
 
 ## [0.2.0] - 2025-09-13
 ### Aggiunto
