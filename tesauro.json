@@ -5,18 +5,11 @@
       "english": "Artificial Intelligence",
       "italian": "Intelligenza artificiale",
       "definition": {
-        "en": "A system that can, for a given set of human-defined objectives, make predictions, recommendations, or decisions influencing real or virtual environments.",
-        "it": "Un sistema che, dato un insieme di obiettivi definiti dall’uomo, può formulare previsioni, raccomandazioni o decisioni che influenzano ambienti reali o virtuali."
+        "en": "A system that ...",
+        "it": "Un sistema che ..."
       },
-      "sources": [
-        "OECD Recommendation on AI (2019)",
-        "ISO/IEC 22989:2022"
-      ],
-      "relations": {
-        "broader": [],
-        "narrower": ["AI002"],
-        "related": []
-      },
+      "sources": [ "OECD Recommendation on AI (2019)", "ISO/IEC 22989:2022" ],
+      "relations": { "broader": [], "narrower": ["AI002"], "related": [] },
       "variants": ["AI", "IA"]
     },
     {
@@ -24,18 +17,28 @@
       "english": "AI Act",
       "italian": "Regolamento europeo sull’IA",
       "definition": {
-        "en": "European Union Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence.",
-        "it": "Regolamento dell’Unione Europea (UE) 2024/1689 che stabilisce regole armonizzate sull’intelligenza artificiale."
+        "en": "European Union Regulation ...",
+        "it": "Regolamento dell’Unione Europea ..."
+      },
+      "sources": [ "AI Act, Regulation (EU) 2024/1689" ],
+      "relations": { "broader": ["AI001"], "narrower": [], "related": [] },
+      "variants": ["AI Regulation", "Reg. UE IA"]
+    },
+    {
+      "id": "AI003",
+      "english": "Agentic AI",
+      "italian": "IA agentica",
+      "definition": {
+        "en": "An artificial intelligence system capable of taking autonomous initiatives based on human-defined high-level goals, adapting its actions to the environment without requiring explicit instructions for each step.",
+        "it": "Un sistema di intelligenza artificiale dotato di capacità di prendere iniziative autonome in base a obiettivi generali definiti dall’uomo, adattando le proprie azioni all’ambiente senza dover ricevere istruzioni esplicite per ogni passo."
       },
       "sources": [
-        "AI Act, Regulation (EU) 2024/1689"
+        "Draft AI Act 2025",
+        "Stanford HAI Report 2024",
+        "Floridi, L. (2023), 'AI Agents and Autonomy', Journal of AI Ethics"
       ],
-      "relations": {
-        "broader": ["AI001"],
-        "narrower": [],
-        "related": []
-      },
-      "variants": ["AI Regulation", "Reg. UE IA"]
+      "relations": { "broader": ["AI001"], "narrower": [], "related": [] },
+      "variants": ["Agentic Artificial Intelligence", "IA autonoma"]
     }
   ]
 }
