@@ -9,7 +9,7 @@
         "it": "Un sistema che ..."
       },
       "sources": [ "OECD Recommendation on AI (2019)", "ISO/IEC 22989:2022" ],
-      "relations": { "broader": [], "narrower": ["AI002"], "related": [] },
+      "relations": { "broader": [], "narrower": ["AI002", "AI004"], "related": [] },
       "variants": ["AI", "IA"]
     },
     {
@@ -39,6 +39,22 @@
       ],
       "relations": { "broader": ["AI001"], "narrower": [], "related": [] },
       "variants": ["Agentic Artificial Intelligence", "IA autonoma"]
+    },
+    {
+      "id": "AI004",
+      "english": "Generative AI",
+      "italian": "IA generativa",
+      "definition": {
+        "en": "A class of AI systems capable of generating novel content (text, images, audio, code, video) from training data or prompts, producing outputs consistent with learned patterns but not mere copies of the originals.",
+        "it": "Classe di sistemi di IA in grado di generare nuovi contenuti (testo, immagini, audio, codice, video) a partire da dati di addestramento o prompt, coerenti con pattern appresi ma non presenti come copie nei dati di origine."
+      },
+      "sources": [
+        "NIST AI Risk Management Framework",
+        "ISO/IEC 22989:2022"
+      ],
+      "relations": { "broader": ["AI001"], "narrower": [], "related": []
+      },
+      "variants": ["AI generativa", "Generative Artificial Intelligence"]
     }
   ]
 }
