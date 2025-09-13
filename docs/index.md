@@ -24,6 +24,7 @@ Questo progetto nasce come risorsa digitale strutturata con l'obiettivo di:
 
 Il progetto è ospitato su [GitHub](https://github.com/mauritiuss/tesauro-ai). 
 Chiunque può proporre modifiche o nuove voci:
+
 - Aprendo una **Issue** con motivazioni e fonti obbligatorie;
 - Seguendo il flusso editoriale descritto nel file [CONTRIBUTING.md](https://github.com/mauritiuss/tesauro-ai/blob/main/CONTRIBUTING.md).
 
