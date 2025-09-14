@@ -234,86 +234,52 @@ Lo sviluppo del tesauro ha richiesto l’integrazione di diverse tecnologie, cia
 | **Tema MkDocs**  | Identità visuale e tipografia                    | Layout sobrio, font leggibili, gerarchie di titoli |
 
 ### Esecuzione del flusso
-Tutti i materiali, script e configurazioni necessari per riprodurre il flusso di produzione documentale sono disponibili nel repository GitHub associato al progetto disponibile a questo [link](https://github.com/mauritiuss/health-dashboard).
+Tutti i materiali, script e configurazioni necessari per riprodurre il flusso di produzione documentale sono disponibili nel repository GitHub associato al progetto disponibile a questo [link](https://github.com/mauritiuss/tesauro-ai).
 
 ## Valutazione dei risultati raggiunti
 
 ### Valutazione del flusso di produzione
 
-Il flusso di produzione adottato ha consentito di ottenere risultati significativi in termini di efficienza, qualità e scalabilità:
+Il workflow editoriale implementato ha prodotto miglioramenti significativi rispetto a un processo manuale e non strutturato:
 
-1. **Riduzione dei tempi di sviluppo e gestione**: L’integrazione di strumenti moderni come **React** per la creazione della WebApp e **GitHub** per la gestione del versionamento ha reso possibile una gestione snella e strutturata del progetto.
-2. **Minimizzazione degli errori**: La fase di acquisizione dei contenuti è stata supportata dall’intelligenza artificiale, con il modello **GPT-4**, che ha fornito testi chiari e coerenti basati su fonti affidabili. La revisione effettuata da **esperti medici** ha permesso di validare i contenuti, correggere eventuali imprecisioni e garantire la qualità scientifica delle informazioni fornite.
-3. **Miglioramento della qualità dei contenuti e della presentazione**: L’adozione di **Semantic UI** per la creazione dell’interfaccia grafica e di **Recharts** per la visualizzazione dei dati ha reso la WebApp non solo funzionale, ma anche esteticamente curata e user-friendly. Questo approccio ha contribuito a migliorare la leggibilità e l’interattività dei contenuti.
-4. **Flessibilità e adattabilità a nuovi scenari d’uso**: Il flusso adottato è altamente scalabile e riutilizzabile. Le tecnologie impiegate sono standard del settore, facilmente aggiornabili e adattabili a nuove esigenze editoriali.
-5. **Accessibilità e ampia diffusione**: Grazie alla natura web-based del prodotto, il contenuto è facilmente accessibile da qualsiasi dispositivo connesso a Internet. L’utilizzo di componenti responsive garantisce una fruizione ottimale anche su dispositivi mobili, ampliando il potenziale bacino di utenti.
+1. **Riduzione dei tempi di gestione documentale**: l’automazione con Python ha ridotto sensibilmente i tempi di gestione documentale, permettendo di trasformare i contenuti dal formato sorgente JSON a documentazione navigabile in pochi minuti invece che in ore di lavoro manuale.  
+2. **Riduzione degli errori**: la gestione centralizzata delle informazioni in JSON e la generazione automatica delle pagine hanno ridotto gli errori, evitando incoerenze, duplicazioni o refusi tipografici.  
+3. **Miglioramento della qualità dei documenti**: la qualità dei documenti è stata migliorata grazie a una struttura uniforme delle voci, alla presenza di metadati (ID, relazioni, fonti) e a un processo di revisione editoriale che garantisce coerenza e affidabilità. 
+4. **Miglioramento del livello di accettazione della tecnologia**: il livello di accettazione della tecnologia è aumentato perché l’uso di GitHub rende il flusso trasparente e collaborativo, mentre MkDocs offre un’interfaccia web semplice e accessibile anche a utenti non tecnici.  
+5. **Raggiungimento di nuovi canali di distribuzione**: i canali di distribuzione sono stati ampliati: la presenza di GitHub rende i dati accessibili anche per sviluppatori e ricercatori.
+6. **Soddisfacimento di nuovi scenari d’uso**: i nuovi scenari d’uso sono stati soddisfatti poiché policy maker, tecnici, ricercatori e giornalisti hanno ora uno strumento consultabile online, aggiornabile e fondato su fonti normative e standard internazionali.  
 
 ### Confronto con lo stato dell'arte
 
-Le tecnologie adottate in questo progetto sono state scelte per garantire un flusso di lavoro efficace, scalabile e facilmente aggiornabile. L’uso di **React** per la creazione della WebApp, insieme a **GitHub** per il versionamento, ha permesso una gestione collaborativa strutturata, assicurando il controllo delle modifiche e la tracciabilità del codice.
+Nella situazione **AS-IS**, i glossari e i documenti disponibili erano statici, spesso in PDF o Word, aggiornati manualmente e privi di tracciabilità. Le scelte terminologiche non erano trasparenti, mancava un sistema di feedback strutturato e gli utenti non avevano strumenti per proporre modifiche.  
 
-Rispetto a metodi più tradizionali, come la produzione di documenti statici (es. **PDF**), questa soluzione offre vantaggi significativi: ogni aggiornamento dei contenuti richiede semplicemente un commit e un push su GitHub, rendendo disponibili le modifiche in tempo reale, senza necessità di ridistribuire manualmente il prodotto.
-
-Inoltre, la combinazione tra intelligenza artificiale (**GPT-4**) per l’acquisizione dei contenuti e la revisione da parte di **esperti medici** ha garantito una produzione rapida, precisa e scientificamente validata. Questo approccio innovativo ha reso possibile la creazione di contenuti aggiornati, affidabili e facilmente accessibili tramite una WebApp responsive, utilizzabile da qualsiasi dispositivo connesso a Internet.
+Con il modello **TO-BE**, invece, i contenuti sono organizzati in un formato sorgente strutturato (JSON), trasformati automaticamente in documentazione navigabile (Markdown + MkDocs) e pubblicati in modo continuo tramite GitHub Pages. L’introduzione di Issues, Pull Request e Changelog ha reso il flusso editoriale trasparente e collaborativo, permettendo agli utenti di partecipare attivamente e seguire l’evoluzione storica del tesauro.
 
 ### Limiti emersi
-Nonostante l’efficacia del flusso di lavoro e delle tecnologie adottate, sono emersi alcuni limiti legati soprattutto alla gestione e alla personalizzazione del prodotto finale.
+Nonostante i risultati raggiunti, sono emersi alcuni limiti:
+- **Accesso alle fonti**: gli standard ISO/IEC sono a pagamento e non integralmente integrabili. Questo limita la completezza del tesauro.  
+- **Automazione parziale**: alcune fasi, come la definizione delle relazioni semantiche (*broader, narrower, related*), richiedono ancora una validazione manuale.  
+- **Integrazione dei contributi**: il workflow GitHub richiede una minima familiarità con gli strumenti da parte degli utenti esterni, il che può limitarne l’adozione.  
+- **Visualizzazione avanzata**: la consultazione avviene in formato testuale; non sono ancora stati implementati strumenti di visualizzazione interattiva delle relazioni semantiche.
 
-L’uso di una **WebApp basata su React** richiede una connessione Internet costante per accedere ai contenuti, il che può rappresentare un limite in contesti con scarsa connettività. Tuttavia, considerando che la maggior parte delle piattaforme digitali moderne richiedono comunque una connessione di rete, questo aspetto risulta marginale.
-
-Un’altra criticità riguarda la personalizzazione grafica: pur avendo utilizzato librerie come **Semantic UI** e **Recharts** per garantire una UI chiara e grafici interattivi, le possibilità di design rimangono comunque vincolate alle opzioni offerte da queste librerie.
-
-Infine, l’affidamento all’intelligenza artificiale (**GPT-4**) per l’acquisizione dei contenuti, sebbene efficace, ha richiesto una **revisione approfondita da parte di esperti medici** per garantire la correttezza e l’affidabilità delle informazioni. Questo passaggio ha introdotto tempistiche aggiuntive, inevitabili però per assicurare la qualità del prodotto finale.
+Il progetto dimostra la fattibilità di un workflow editoriale digitale per un tesauro bilingue, che migliora significativamente tempi, qualità e trasparenza rispetto ai metodi tradizionali. Tuttavia, restano margini di miglioramento nell’automazione completa, nell’integrazione delle fonti e nelle funzionalità di visualizzazione.
  
 ## Conclusioni
-In conclusione, gli obiettivi principali del progetto sono stati pienamente raggiunti, grazie a un flusso di lavoro ben strutturato e all’uso di tecnologie adeguate. Vediamo nel dettaglio:
+Il progetto ha dimostrato la possibilità di realizzare un workflow editoriale digitale per la gestione di un tesauro bilingue dedicato alla governance dell’intelligenza artificiale. Gli obiettivi definiti negli scenari d’uso sono stati in gran parte raggiunti: policy maker, ingegneri, ricercatori e giornalisti dispongono ora di uno strumento consultabile online, aggiornabile e tracciabile, che unisce rigore normativo e flessibilità tecnica.  
 
-- **Raccolta e validazione dei contenuti**: L’utilizzo di **GPT-4** ha permesso di acquisire rapidamente informazioni utili e pertinenti, che sono state poi sottoposte alla revisione di **esperti medici**. Questo ha garantito un equilibrio tra velocità di produzione e accuratezza scientifica.
-- **Gestione del versioning e aggiornamenti**: L’integrazione con **GitHub** ha reso semplice la gestione delle versioni del progetto, permettendo un controllo preciso delle modifiche.
-- **Sviluppo di una WebApp moderna**: La scelta di **React** come framework di sviluppo ha consentito la realizzazione di un’interfaccia dinamica e interattiva, offrendo un’esperienza utente fluida e intuitiva. L’uso di librerie come **Semantic UI** e **Recharts** ha permesso di creare componenti grafici chiari e visualizzazioni dei dati efficaci.
+I risultati più soddisfacenti riguardano la riduzione dei tempi di gestione documentale, resa possibile dall’automazione della trasformazione dei contenuti, e l’aumento della trasparenza editoriale, garantita dal sistema di versionamento, dalle giustificazioni pubbliche e dalla possibilità per gli utenti di proporre modifiche tramite GitHub. Anche la qualità dei documenti è migliorata grazie a una struttura coerente e alla presenza di metadati chiari.  
+
+Permangono tuttavia alcune limitazioni: l’accesso parziale a standard a pagamento come ISO/IEC, la necessità di validazione manuale per le relazioni semantiche e la curva di apprendimento legata all’uso di GitHub per contributori non esperti. Questi aspetti rappresentano margini di miglioramento futuri, ad esempio attraverso l’adozione di interfacce più intuitive o di strumenti di visualizzazione avanzata delle relazioni semantiche.  
+
+In conclusione, il workflow proposto ha reso il tesauro uno strumento “vivo”, capace di evolversi nel tempo e di supportare in modo interdisciplinare il lavoro di policy making, ricerca e divulgazione, pur lasciando spazio a sviluppi ulteriori per ampliarne accessibilità e funzionalità.
 
 ## Bibliografia e sitografia
 
-Di seguito tutte le fonti usate nella progettazione del prodotto editoriale digitale:
-
-1. **Corriere della Sera – Salute, 2023**: "Il numero di passi giornalieri ideale"  
-   [leggi di più](https://www.corriere.it/salute/cardiologia/23_novembre_07/numero-passi-giornalieri-ideale-c0b4e77c-7c96-11ee-90f0-2d45ce928adc.shtml)
-
-2. **Kosuke Inoue, Amanda E. Paluch, 2023**: "Daily Step Counts and Mortality and Cardiovascular Events: A Meta-Analysis"  
-   [leggi di più](https://www.sciencedirect.com/science/article/pii/S0735109723064008)
-
-3. **Healthy The Wom, 2023**: "Frequenza cardiaca: cosa è normale e cosa no"  
-   [leggi di più](https://healthy.thewom.it/esami-e-analisi/frequenza-cardiaca/)
-
-4. **Humana Vox, 2023**: "Battito cardiaco: valori normali e quando preoccuparsi"  
-   [leggi di più](https://www.humanavox.it/battito-cardiaco/)
-
-5. **Livello Salute, 2023**: "Quanti battiti cardiaci sono normali per stare bene"  
-   [leggi di più](https://www.livellosalute.it/fitness/battiti-cardiaci-quanti-devono-essere-per-stare-bene/)
-
-6. **Microbiologia Italia, 2024**: "I benefici del sonno per la salute mentale"  
-   [leggi di più](https://www.microbiologiaitalia.it/salute/i-benefici-del-sonno-per-la-salute-mentale/)
-
-7. **Microbiologia Italia, 2024**: "L’Importanza del Sonno: Riposo di Qualità per una Vita più Sana"  
-   [leggi di più](https://www.microbiologiaitalia.it/benessere/riposo-di-qualita/)
-
-8. **Interlab Analisi, 2024**: "Il sonno e la salute: perché dormire bene è fondamentale"  
-   [leggi di più](https://interlabanalisi.it/il-sonno-e-la-salute-perche-dormire-bene-e-importante/)
-
-9. **Rete HPH Italia, 2024**: "L’Impatto del sonno sulla salute: un’analisi approfondita"  
-   [leggi di più](https://www.retehphitalia.it/limpatto-del-sonno-sulla-salute-unanalisi-approfondita/)
-
-10. **Guida Psicologi, 2024**: "L’importanza del sonno di qualità: perché dovremmo riposare bene?"  
-   [leggi di più](https://www.guidapsicologi.it/articoli/limportanza-del-sonno-perche-dovremmo-riposare-bene?)
-
-11. **VEb.it, 2024**: "Il Potere del Sonno: Perché Dormire Bene è Essenziale per la Salute Mentale e Fisica"  
-   [leggi di più](https://www.veb.it/il-potere-del-sonno-perche-dormire-bene-e-essenziale-per-la-salute-mentale-e-fisica-119477?)
-
-12. **Nurse24 - Elvira La Montagna, 2022**: "Temperatura corporea e i diversi tipi di Febbre"  
-   [Leggi di più]( https://www.nurse24.it/infermiere/utility/temperatura-corporea.html)
-
-13. **Salus, 2024**: "L’importanza della temperatura corporea e della termoregolazione"  
-   [Leggi di più](https://www.salus.it/limportanza-della-temperatura-corporea-e-della-termoregolazione)
-
-14. **BiologiaWiki - Crisafulli, 2024**: "Regolazione della temperatura corporea - Termoregolazione - fisiologia"  
-   [Leggi di più](https://biologiawiki.it/wiki/regolazione-della-temperatura-corporea)
+- Parlamento Europeo e Consiglio dell’Unione Europea (2024). *AI Act – Regolamento UE 1689/2024*. Disponibile su [EUR-Lex](https://eur-lex.europa.eu/).  
+- Consiglio d’Europa (2024). *Convenzione quadro sull’intelligenza artificiale*. Disponibile su [coe.int](https://www.coe.int/).  
+- GPAI (2023). *Codes of Practice on Artificial Intelligence*. Disponibile su [gpai.ai](https://gpai.ai/).  
+- NIST (2023). *AI Risk Management Framework*. Disponibile su [nist.gov](https://www.nist.gov/).  
+- ISO/IEC (2022). *22989:2022 Artificial Intelligence – Concepts and terminology*. International Organization for Standardization.  
+- ISO/IEC (2023). *23894:2023 Artificial Intelligence – Risk management*. International Organization for Standardization.  
+- GitHub. *Repository tesauro-ai*. Disponibile su [github.com/mauritiuss/tesauro-ai](https://github.com/mauritiuss/tesauro-ai).  
+- MkDocs (2024). *Project documentation with Markdown*. Disponibile su [mkdocs.org](https://www.mkdocs.org/).  
