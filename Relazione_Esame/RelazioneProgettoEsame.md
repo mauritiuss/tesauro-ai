@@ -12,7 +12,7 @@ csl: IEEE.csl
 
 ![Logo UNIMI](./logo/minerva.jpg){width=100px height=100px}
 
-# # Tesauro bilingue sulla governance dell’intelligenza artificiale
+# Tesauro bilingue sulla governance dell’intelligenza artificiale
 
 [Link alla repository del progetto](https://github.com/mauritiuss/tesauro-ai)
 
@@ -126,52 +126,83 @@ Questi standard garantiscono che la terminologia utilizzata sia coerente con doc
 
 In questo modo, il tesauro si configura non solo come un prodotto editoriale statico, ma come una piattaforma **collaborativa, tracciabile e innovativa**, in grado di evolvere insieme al linguaggio dell’intelligenza artificiale.
 
-
-
-
-
-
-
-
 ### Canali di distribuzione
-Per distribuire il prodotto editoriale digitale, si prevede l'utilizzo di:
+Il tesauro è concepito come risorsa digitale multicanale, per raggiungere pubblici diversi e adattarsi a differenti contesti di fruizione.  
 
-- **Web**: La WebApp sarà il canale principale, accessibile da qualsiasi browser senza bisogno di installare applicazioni aggiuntive.
+#### Canali principali
+- **Web**: pubblicazione principale tramite sito statico generato con *MkDocs* e distribuito su *GitHub Pages*.  
+- **Social**: condivisione di aggiornamenti e nuove versioni tramite canali istituzionali (es. LinkedIn o X/Twitter) per favorire la diffusione delle novità.  
+- **Repository GitHub**: punto di riferimento per gli esperti e contributori, che possono accedere direttamente al sorgente (`tesauro.json`) e al flusso editoriale.  
+- **Intranet accademica/istituzionale** (opzionale): possibile integrazione in contesti interni (università, enti di ricerca) come risorsa di riferimento per corsi o policy interne.  
 
-L’identità visuale seguirà uno stile moderno, chiaro e professionale, con un design minimale che favorisca la leggibilità e l’usabilità. 
-Per lo sviluppo grafico, ci siamo affidati a **Semantic UI**, una libreria front-end che offre componenti predefiniti eleganti e facilmente personalizzabili. Questo ha permesso di mantenere una coerenza visiva, con elementi ben strutturati e intuitivi.
-Per la rappresentazione dei dati, abbiamo scelto la libreria **Recharts**, che consente di creare grafici dinamici e interattivi (a barre, linee, torte) offrendo una visualizzazione immediata e comprensibile dei parametri monitorati.
+#### Formati dati previsti
+- **JSON**: formato sorgente, strutturato e leggibile dalle macchine.  
+- **Markdown / WebBook**: formato di consultazione, ottimizzato per il web.  
+- **PDF** (generabile da MkDocs): per distribuzione offline e archiviazione istituzionale.
 
-Inoltre:
+#### Identità visuale e stile tipografico
+- **Tipografia**: caratteri sans-serif leggibili sul web (es. *Roboto*, *Inter*) con utilizzo di titoli ben gerarchizzati (H1, H2, H3).  
+- **Colori e layout**: interfaccia minimale, con palette neutra, per mettere in risalto il contenuto testuale.  
+- **Stile redazionale**:  
+  - Tono **formale e professionale**, adatto a documenti normativi e scientifici;  
+  - Uso coerente di termini bilingui (IT/EN);  
+  - Citazione sistematica delle fonti.
 
-- **Colori**: Palette sobria con tonalità neutre e accenti di colore per evidenziare dati importanti (es.: verde per valori nella norma, rosso per anomalie).
-- **Icone**: Anche per le icone, abbiamo utilizzato Semantic UI, garantendo uno stile coerente e riconoscibile in tutta la WebApp.
-
-L’obiettivo è bilanciare innovazione e familiarità:
-
-- **Adesione a modelli conosciuti**: La struttura della WebApp richiama dashboard di monitoraggio già note, facilitando la navigazione intuitiva.
-- **Innovazione**: La personalizzazione avanzata dei report e la visualizzazione dinamica dei dati tramite grafici interattivi rendono l’esperienza più coinvolgente rispetto ai report tradizionali statici (come PDF).
+In questo modo, il tesauro assume un’identità editoriale chiara e affidabile, comunicando rigore formale nei contenuti e innovazione nei processi di gestione.
 
 ## Processo di Produzione
 
 ### Acquisizione dei contenuti
 
-L'acquisizione dei contenuti è avvenuta attraverso un approccio misto.
+La costruzione del tesauro si basa su un insieme selezionato di fonti normative, standard tecnici e documenti concettuali. La scelta delle fonti tiene conto sia della loro rilevanza scientifica e istituzionale, sia del costo di acquisizione in termini di tempo e risorse.
 
-La fase iniziale di generazione del testo e ricerca delle fonti è stata svolta tramite l’intelligenza artificiale, utilizzando **ChatGPT basato sul modello GPT-4**. Questo modello avanzato, sviluppato da OpenAI, è stato scelto per la sua capacità di produrre testi coerenti, pertinenti e ben strutturati.
+#### Fonti libere e disponibili pubblicamente
+- **AI Act europeo (Reg. UE 1689/2024)**: testo legislativo disponibile in formato digitale multilingue sul portale EUR-Lex.  
+- **Convenzione quadro del Consiglio d’Europa sull’IA**: documento accessibile gratuitamente sul sito del Consiglio d’Europa.  
+- **GPAI Codes of Practice**: linee guida rese disponibili pubblicamente dal partenariato globale sull’IA.  
+- **NIST AI Risk Management Framework (2023)**: pubblicato in modalità open access.  
 
-Successivamente, il contenuto è stato sottoposto a una revisione manuale da parte di esperti medici, con l’obiettivo di garantire un’elevata qualità, integrare eventuali informazioni mancanti e verificare l’accuratezza delle fonti utilizzate.
+Queste fonti costituiscono la base normativa e policy del tesauro, senza costi diretti di acquisizione.
 
-Quando le fonti originali si sono rivelate insufficienti o poco precise, sono state selezionate ulteriori risorse affidabili per completare il processo di acquisizione dei contenuti in modo rigoroso e attendibile.
+#### Fonti standard internazionali (parzialmente a pagamento)
+- **ISO/IEC 22989:2022** (terminologia AI).  
+- **ISO/IEC 23894:2023** (gestione del rischio nei sistemi di IA).  
 
-Spiegazione del modello adottato:
+Questi standard sono di riferimento imprescindibile, ma la loro acquisizione comporta un costo economico. L’integrazione nel tesauro avviene selezionando i concetti chiave, nel rispetto delle licenze di utilizzo.
 
-- **GPT-4**: Si tratta di un modello di linguaggio di ultima generazione sviluppato da OpenAI, noto per la sua capacità di comprendere il contesto e produrre risposte dettagliate e accurate. È stato scelto per la sua particolare efficacia nella generazione di testi complessi, supportando attività come la scrittura creativa, la revisione e l’elaborazione di contenuti tecnici. Questa tecnologia si è rivelata fondamentale nella fase iniziale di raccolta e strutturazione delle informazioni.
+#### Contenuti generabili automaticamente
+- **Metadati di traduzione bilingue**: parte delle traduzioni inglese-italiano può essere supportata da strumenti di traduzione assistita (CAT tools), che velocizzano il processo mantenendo la coerenza terminologica.  
+- **Estratti da documenti pubblici**: l’uso di parser per documenti in XML/HTML consente di importare automaticamente definizioni e riferimenti normativi.
 
-L’approccio combinato tra l’utilizzo dell’intelligenza artificiale per il reperimento delle fonti e la revisione da parte di medici esperti ha permesso di offrire agli utenti informazioni accurate, complete e di alto valore.
+#### Contenuti da redigere manualmente
+- **Concetti emergenti** (es. *IA agentica*, *IA generativa*): non sempre presenti in fonti istituzionali, richiedono un lavoro di definizione e contestualizzazione redazionale.  
+- **Relazioni semantiche (broader, narrower, related)**: la classificazione non è automatizzabile in modo affidabile e deve essere validata editorialmente.  
+- **Note esplicative e giustificazioni**: ogni decisione editoriale (approvazione, rifiuto, modifica) viene redatta manualmente dal comitato e pubblicata a beneficio degli utenti.
+
+Questo approccio ibrido assicura al tesauro sia **rigore istituzionale**, sia **flessibilità innovativa** nell’inclusione di concetti nuovi.
+
 
 ### Gestione documentale
-Il flusso di gestione documentale si compone delle seguenti fasi:
+Il flusso di gestione documentale del tesauro è stato progettato per garantire **trasparenza, aggiornabilità e tracciabilità** in ogni fase del processo. Le principali tappe sono:
+
+1. **Ideazione**: Identificazione dei concetti e dei termini più rilevanti per la governance dell’intelligenza artificiale, sulla base delle esigenze emerse dalle *personas* (policy maker, ingegneri, ricercatori, giornalisti). Questa fase ha permesso di selezionare i contenuti che avrebbero avuto maggiore utilità per gli utenti finali.
+2. **Acquisizione dei contenuti**: Raccolta delle informazioni da fonti normative, standard internazionali e documenti scientifici. In particolare: AI Act europeo, Convenzione del Consiglio d’Europa, GPAI Codes of Practice, NIST AI RMF e standard ISO/IEC. Sono stati inclusi anche concetti emergenti (es. *IA agentica*, *IA generativa*) tramite lavoro redazionale.
+3. **Valutazione dei diritti**: Classificazione delle fonti in base ai vincoli di utilizzo:  
+   - fonti **libere e open access** (es. AI Act, NIST RMF),  
+   - fonti **a pagamento con licenza** (ISO/IEC),  
+   - contenuti **redatti manualmente** (concetti filosofici o emergenti).  
+   Questo garantisce il rispetto delle regole di copyright e citazione.
+4. **Strutturazione dei contenuti**: Organizzazione dei termini nel formato sorgente **JSON** (`tesauro.json`). Ogni voce include ID, definizione bilingue, fonti, relazioni semantiche (*broader*, *narrower*, *related*) e varianti terminologiche. Questa fase assicura coerenza e uniformità nella rappresentazione dei dati.
+5. **Trasformazione dei formati**: Attraverso lo script Python `generate_docs.py`, i contenuti JSON vengono trasformati automaticamente in file **Markdown** (`docs/terms/AIxxx.md`) e in un indice di consultazione. Questo passaggio permette la creazione di una documentazione navigabile e facilmente pubblicabile.
+6. **Applicazione dello stile grafico**: Utilizzo del framework **MkDocs** per pubblicare il tesauro come sito statico. Sono state adottate scelte di identità visiva sobrie (tipografia sans-serif, layout minimale, gerarchie di titoli chiare) per privilegiare la leggibilità dei testi e la consultazione rapida.
+7. **Generazione dei metadati**: Aggiunta di informazioni complementari (ID univoco, relazioni semantiche, fonti normative, varianti) sia all’interno delle voci sia nel versionamento GitHub (storico commit, changelog, tag). I metadati garantiscono tracciabilità e trasparenza editoriale.
+8. **Revisione e approvazione**: Ogni proposta di modifica viene presentata tramite **Issue** con motivazioni e fonti obbligatorie. Il comitato editoriale valuta, approva o rifiuta le modifiche, fornendo una giustificazione pubblica. Le modifiche approvate generano una **Pull Request**, che viene verificata e fusa nel branch `main`.
+9. **Distribuzione dei contenuti**: La pubblicazione avviene tramite **GitHub Pages**, che aggiorna automaticamente il sito a ogni modifica del branch principale. In questo modo, il tesauro rimane sempre aggiornato e accessibile pubblicamente.
+
+
+
+
+
 
 1. **Ideazione**: Identificazione dei contenuti più comuni e significativi in base alle esigenze emerse dalle *personas* definite. Questa fase ha permesso di stabilire quali dati e informazioni sarebbero stati più utili e rilevanti per gli utenti finali.
 2. **Acquisizione dei contenuti**: Raccolta delle informazioni tramite intelligenza artificiale, utilizzando **ChatGPT basato sul modello GPT-4**. L’AI è stata impiegata per reperire studi scientifici e dati utili riguardanti i parametri di monitoraggio della salute, come passi giornalieri, frequenza cardiaca, ore di sonno e temperatura corporea.
@@ -191,36 +222,28 @@ Il flusso di gestione documentale si compone delle seguenti fasi:
 ```mermaid
 graph TD
     A[Inizio] --> B[Ideazione dei contenuti]
-    B --> C[Acquisizione automatica dei contenuti con GPT-4]
-    C --> D[Revisione dei contenuti da parte dei medici]
+    B --> C[Acquisizione da fonti normative e standard]
+    C --> D[Redazione manuale per concetti emergenti]
 
     E{Contenuti approvati?}
     D --> E
-    E -->|Sì| F[Salvataggio dei contenuti e versionamento su GitHub]
-    E -->|No| C[Raccolta e revisione aggiuntiva]
+    E -->|Sì| F[Strutturazione in formato JSON (tesauro.json)]
+    E -->|No| C
 
-    F --> G[Sviluppo della WebApp in React]
-    G --> H[Installazione librerie tramite npm]
+    F --> G[Generazione automatica file Markdown con script Python]
+    G --> H[Applicazione stile grafico con MkDocs]
 
-    subgraph Librerie utilizzate
-        direction TB
-        I1[Semantic UI]
-        I2[Recharts per i grafici]
-        I3[React-router-dom per la navigazione]
-        I4[Papaparse per la gestione dei dati CSV]
-        I5[React-markdown per la visualizzazione dei testi]
-        I6[React-helmet-async per la gestione dei metadati]
-    end
-    H --> I1
-    H --> I2
-    H --> I3
-    H --> I4
-    H --> I5
-    H --> I6
+    H --> I[Revisione e approvazione del comitato editoriale]
+    I --> J{Pull Request accettata?}
+    J -->|Sì| K[Merge su branch main]
+    J -->|No| D
 
-    G --> J[Collegamento del repository su GitHub]
-    J --> K[Versionamento del codice]
-    K --> L[Fine]
+    K --> L[Distribuzione automatica su GitHub Pages]
+    L --> M[Consultazione pubblica del tesauro]
+    M --> N[Proposte di aggiornamento via Issues]
+
+    N --> O[Nuovo ciclo editoriale]
+    O --> B
 ```
 ### Tecnologie adottate
 Le tecnologie utilizzate sono state selezionate per garantire l'efficacia e la qualità delle diverse fasi del progetto, offrendo strumenti adeguati sia per la creazione dei contenuti che per la loro gestione e distribuzione. Ecco una panoramica delle tecnologie principali e del loro contributo:
