@@ -95,13 +95,11 @@ In questo modo, la fruizione non è solo passiva ma collaborativa: il tesauro di
 ### Canali di distribuzione
 Il tesauro è concepito come una risorsa digitale multicanale, pensata per raggiungere pubblici diversi e adattarsi a contesti di utilizzo differenti. Il canale principale è il web, grazie alla pubblicazione come sito statico generato con *MkDocs* e distribuito tramite *GitHub Pages*. Questa scelta assicura un accesso semplice, gratuito e immediato da qualsiasi dispositivo connesso a Internet, senza la necessità di installare software dedicati.  
 
-Accanto al sito, il progetto prevede la diffusione delle novità e delle nuove versioni anche attraverso i canali social istituzionali, come LinkedIn o X/Twitter, che consentono di raggiungere una comunità più ampia e favorire il dialogo con professionisti e ricercatori. Un ulteriore canale di distribuzione è rappresentato dal repository GitHub, che diventa il punto di riferimento per esperti e contributori: qui è possibile consultare il formato sorgente (`tesauro.json`), proporre modifiche e seguire lo sviluppo editoriale. In prospettiva, il tesauro potrebbe essere integrato anche in intranet accademiche o istituzionali, per supportare corsi universitari o policy interne.  
+Un ulteriore canale di distribuzione è rappresentato dal repository GitHub, che diventa il punto di riferimento per esperti e contributori: qui è possibile consultare il formato sorgente (`tesauro.json`), proporre modifiche e seguire lo sviluppo editoriale. In prospettiva, il tesauro potrebbe essere integrato anche in intranet accademiche o istituzionali, per supportare corsi universitari o policy interne.  
 
-Dal punto di vista dei formati, il tesauro nasce in **JSON**, un formato sorgente strutturato e leggibile dalle macchine che garantisce interoperabilità. A partire da questo, i contenuti vengono trasformati in **Markdown/WebBook**, ottimizzati per la fruizione online.
+Dal punto di vista dei formati, il tesauro nasce in **JSON**, un formato sorgente strutturato e leggibile dalle macchine che garantisce interoperabilità. A partire da questo, i contenuti vengono trasformati in **Markdow**, ottimizzati per la fruizione online.
 
 Per quanto riguarda l’identità visiva, il sito segue uno stile chiaro, minimale e professionale. Sono stati scelti caratteri sans-serif come *Roboto* o *Inter*, che garantiscono leggibilità sul web, con titoli gerarchizzati per rendere immediata la navigazione tra i contenuti. La palette cromatica è neutra e sobria, con colori che non distraggono dal testo ma lo valorizzano. Lo stile redazionale mantiene un tono formale e coerente con la natura normativa e scientifica del progetto, con l’uso sistematico del bilinguismo (IT/EN) e la citazione accurata delle fonti.  
-
-L’obiettivo è bilanciare **adesione a modelli riconosciuti** — come glossari istituzionali e standard internazionali — per trasmettere autorevolezza, con elementi di **innovazione** nella modalità di fruizione, che non si limita a una consultazione statica ma permette aggiornamenti dinamici e partecipazione attiva da parte degli utenti.
 
 ## Processo di Produzione
 
@@ -109,9 +107,9 @@ L’obiettivo è bilanciare **adesione a modelli riconosciuti** — come glossar
 
 L’acquisizione dei contenuti del tesauro è avvenuta attraverso un approccio misto, che combina fonti libere, standard internazionali, processi semi-automatici e redazione manuale.  
 
-La fase iniziale ha previsto la selezione delle fonti normative e di policy più rilevanti, tra cui l’AI Act europeo, la Convenzione quadro del Consiglio d’Europa, i GPAI Codes of Practice e il NIST AI Risk Management Framework. Tutti questi documenti, disponibili liberamente online, hanno rappresentato la base normativa di riferimento. A queste si sono aggiunti gli standard ISO/IEC 22989:2022 e 23894:2023, fondamentali per la coerenza terminologica e metodologica, ma soggetti a vincoli economici e di licenza, che hanno reso necessaria un’attenta scelta dei concetti chiave da integrare.  
+La fase iniziale ha previsto la raccolta delle fonti normative principali, come l’AI Act europeo, la Convenzione del Consiglio d’Europa, i GPAI Codes of Practice e il NIST AI Risk Management Framework, tutti disponibili liberamente online. A queste si sono affiancati gli standard ISO/IEC 22989:2022 e 23894:2023, fondamentali per la coerenza terminologica, ma soggetti a costi e vincoli di licenza, che hanno imposto una selezione mirata dei concetti da integrare.  
 
-Parallelamente, alcune informazioni sono state generate in maniera semi-automatica: strumenti di traduzione assistita hanno supportato la produzione delle versioni bilingui, mentre parser per documenti strutturati (in XML o HTML) hanno permesso di estrarre in modo più rapido definizioni e riferimenti normativi.  
+Accanto a questo lavoro, alcune informazioni sono state prodotte in modo semi-automatico: strumenti di traduzione hanno agevolato la versione bilingue delle voci, mentre parser per documenti strutturati hanno permesso di estrarre rapidamente definizioni e riferimenti normativi.  
 
 Nonostante il contributo delle tecnologie, una parte significativa del lavoro è rimasta manuale. Concetti emergenti come *IA agentica* o *IA generativa* hanno richiesto una definizione redazionale ad hoc, così come le relazioni semantiche (*broader*, *narrower*, *related*), difficili da automatizzare in modo affidabile. Anche le giustificazioni editoriali e le note esplicative sono state redatte manualmente, con l’obiettivo di garantire trasparenza e rigore.  
 
@@ -186,9 +184,9 @@ Il workflow editoriale implementato ha prodotto miglioramenti significativi risp
 
 ### Confronto con lo stato dell'arte
 
-Nella situazione **AS-IS**, i glossari e i documenti disponibili erano statici, spesso in PDF o Word, aggiornati manualmente e privi di tracciabilità. Le scelte terminologiche non erano trasparenti, mancava un sistema di feedback strutturato e gli utenti non avevano strumenti per proporre modifiche.  
+Nella situazione **AS-IS** (=*così com'é*), i glossari e i documenti disponibili erano statici, spesso in PDF o Word, aggiornati manualmente e privi di tracciabilità. Le scelte terminologiche non erano trasparenti, mancava un sistema di feedback strutturato e gli utenti non avevano strumenti per proporre modifiche.  
 
-Con il modello **TO-BE**, invece, i contenuti sono organizzati in un formato sorgente strutturato (JSON), trasformati automaticamente in documentazione navigabile (Markdown + MkDocs) e pubblicati in modo continuo tramite GitHub Pages. L’introduzione di Issues, Pull Request e Changelog ha reso il flusso editoriale trasparente e collaborativo, permettendo agli utenti di partecipare attivamente e seguire l’evoluzione storica del tesauro.
+Con il modello **TO-BE**(=*così come sarà*), invece, i contenuti sono organizzati in un formato sorgente strutturato (JSON), trasformati automaticamente in documentazione navigabile (Markdown + MkDocs) e pubblicati in modo continuo tramite GitHub Pages. L’introduzione di Issues, Pull Request e Changelog ha reso il flusso editoriale trasparente e collaborativo, permettendo agli utenti di partecipare attivamente e seguire l’evoluzione storica del tesauro.
 
 ### Limiti emersi
 Nonostante i risultati raggiunti, sono emersi alcuni limiti:
