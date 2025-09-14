@@ -23,7 +23,7 @@ Questo repository contiene un **tesauro bilingue (EN/IT) sulla governance dell�
 
 ## Consultazione online
 Il tesauro è pubblicato come sito statico su **GitHub Pages**:  
-👉 [https://mauritiuss.github.io/tesauro-ai/](https://mauritiuss.github.io/tesauro-ai/)
+[https://mauritiuss.github.io/tesauro-ai/](https://mauritiuss.github.io/tesauro-ai/)
 
 ---
 
