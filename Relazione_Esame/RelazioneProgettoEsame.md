@@ -45,39 +45,31 @@ Il tesauro è pensato per un pubblico interdisciplinare che necessita di strumen
 
 ---
 
-1. Persona 1 — *Giulia, Policy Maker*
+1. *Giulia, Policy Maker*
    - **Profilo**: Funzionario del Ministero dello sviluppo Economico, 42 anni.
    - **Esigenze**: Comprende i termini tecnici presenti nei documenti normativi internazionali per adattarli al contesto legislativo italiano.  
    - **Scenario d'uso**: Giulia consulta il tesauro per verificare la coerenza terminologica tra il testo dell’AI Act europeo e il Disegno di Legge italiano del 2025, assicurandosi che la traduzione in italiano di concetti chiave sia uniforme.
 
 ---
 
-2. Persona 2 — *Luca, Ingegnere AI*
+2. *Luca, Ingegnere AI*
    - **Profilo**: Ingegnere informatico in una startup di AI, 29 anni.  
    - **Esigenze**: Allineare la documentazione tecnica aziendale agli standard internazionali (ISO/IEC, NIST).  
    - **Scenario d’uso**: Luca utilizza il tesauro per trovare la traduzione corretta di *“risk-based approach”* e capisce come il termine è usato nel contesto delle normative e degli standard di settore, così da uniformare il manuale tecnico aziendale.
 
 ---
 
-3. Persona 3 — *Sara, Ricercatrice di filosofia*
+3. *Sara, Ricercatrice di filosofia*
    - **Profilo**: Dottoranda in filosofia della tecnologia, 26 anni.  
    - **Esigenze**: analizzare le implicazioni etiche e concettuali di termini emergenti.  
    - **Scenario d’uso**: Sara consulta la voce *“IA agentica”* per esplorare le sue definizioni in inglese e in italiano, scoprendo anche i collegamenti semantici con concetti più ampi come *Artificial Intelligence* e le fonti normative in cui il termine è stato discusso.
 
 ---
 
-4. Persona 4 — *Marco, Giornalista scientifico*
+4. *Marco, Giornalista scientifico*
    - **Profilo**: Giornalista freelance specializzato in innovazione tecnologica, 35 anni.  
    - **Esigenze**: comunicare concetti complessi di IA a un pubblico generalista in modo chiaro e corretto.  
    - **Scenario d’uso**: Marco si affida al tesauro per scrivere un articolo sul dibattito internazionale riguardo alla *Generative AI*, utilizzando definizioni ufficiali e citando le fonti normative per rafforzare la credibilità del suo pezzo.
-
----
-
-5. **Francesco, 50 anni, paziente con patologie croniche**
-   - **Background**: Ha problemi di ipertensione e monitora la propria salute con uno smartwatch medico. È poco esperto di tecnologia.
-   - **Obiettivi**: Monitorare parametri come la frequenza cardiaca e la temperatura corporea, evitando situazioni di rischio.
-   - **Bisogni**: Interfaccia semplice e spiegazioni chiare sui dati, con indicazioni su quando è necessario consultare un medico.
-   - **Scenario d'uso**:  Utilizza la WebApp per controllare i parametri vitali e si sente rassicurato dalla possibilità di accedere facilmente ai suoi dati.
 
 ---
 
