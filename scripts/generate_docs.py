@@ -2,11 +2,13 @@ import json
 import pathlib
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+# Calcolo dei percorsi principali
+ROOT = pathlib.Path(__file__).resolve().parent.parent # .../scripts/generate_docs.py -> root progetto
 DOCS = ROOT / "docs"
 TERMS_DIR = DOCS / "terms"
-TERMS_DIR.mkdir(parents=True, exist_ok=True)
+TERMS_DIR.mkdir(parents=True, exist_ok=True) # Crea docs/terms/ se manca
 
+# Caricamento del sorgente JSON
 data_path = ROOT / "tesauro.json"
 if not data_path.exists():
     print("❌ File tesauro.json non trovato nella root del progetto.")
@@ -25,7 +27,7 @@ def link_to(tid: str) -> str:
         return f"[{tid}](./{tid}.md)"
     return tid or "—"
 
-# Costruisci l'indice
+# Costruisci l'indice (tabella in Markdown)
 index_lines = [
     "# Indice dei termini",
     "",
@@ -33,6 +35,7 @@ index_lines = [
     "|---|---|---|",
 ]
 
+# Generazione pagine + righe dell'indice
 for t in terms:
     tid = (t.get("id") or "").strip()
     en = (t.get("english") or "").strip()
@@ -42,17 +45,20 @@ for t in terms:
     defn_it = defn.get("it", "") or ""
     sources = t.get("sources", []) or []
     rel = t.get("relations", {}) or {}
+    # Liste di link (o testo/—) per le relazioni semantiche
     broader = [link_to(x) for x in (rel.get("broader") or [])]
     narrower = [link_to(x) for x in (rel.get("narrower") or [])]
     related = [link_to(x) for x in (rel.get("related") or [])]
+    
     variants = t.get("variants", []) or []
 
-    # Riga nell'indice
+    # Riga nell'indice (ID come link alla pagina)
     index_lines.append(f"| [{tid}](./{tid}.md) | {en} | {it} |")
 
-    # Sezione fonti (senza usare * condizionale)
+    # Sezione fonti: elenco o placeholder
     fonti_lines = [f"- {s}" for s in sources] if sources else ["_Nessuna fonte indicata._"]
-
+    
+    # Contenuto della pagina della voce
     page_lines = [
         f"# {en} / {it} ({tid})",
         "",
@@ -79,8 +85,9 @@ for t in terms:
         "[↩ Torna all’indice](./index.md)",
     ]
 
+    # Scrittura file della voce
     (TERMS_DIR / f"{tid}.md").write_text("\n".join(page_lines), encoding="utf-8")
 
-# Scrivi l'indice
+# Scrittura dell'indice e messaggio finale
 (TERMS_DIR / "index.md").write_text("\n".join(index_lines), encoding="utf-8")
 print("✅ Generazione completata in docs/terms/")
