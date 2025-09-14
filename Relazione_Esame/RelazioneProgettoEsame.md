@@ -199,51 +199,24 @@ Il flusso di gestione documentale del tesauro è stato progettato per garantire 
 8. **Revisione e approvazione**: Ogni proposta di modifica viene presentata tramite **Issue** con motivazioni e fonti obbligatorie. Il comitato editoriale valuta, approva o rifiuta le modifiche, fornendo una giustificazione pubblica. Le modifiche approvate generano una **Pull Request**, che viene verificata e fusa nel branch `main`.
 9. **Distribuzione dei contenuti**: La pubblicazione avviene tramite **GitHub Pages**, che aggiorna automaticamente il sito a ogni modifica del branch principale. In questo modo, il tesauro rimane sempre aggiornato e accessibile pubblicamente.
 
-
-
-
-
-
-1. **Ideazione**: Identificazione dei contenuti più comuni e significativi in base alle esigenze emerse dalle *personas* definite. Questa fase ha permesso di stabilire quali dati e informazioni sarebbero stati più utili e rilevanti per gli utenti finali.
-2. **Acquisizione dei contenuti**: Raccolta delle informazioni tramite intelligenza artificiale, utilizzando **ChatGPT basato sul modello GPT-4**. L’AI è stata impiegata per reperire studi scientifici e dati utili riguardanti i parametri di monitoraggio della salute, come passi giornalieri, frequenza cardiaca, ore di sonno e temperatura corporea.
-3. **Revisione dei contenuti**: Le informazioni raccolte tramite l’AI sono state sottoposte a una revisione manuale da parte di medici esperti. Questo passaggio ha garantito l’accuratezza, la coerenza e l’affidabilità dei dati, integrando o correggendo eventuali inesattezze fornite dall’intelligenza artificiale.
-4. **Sviluppo della WebApp**: Creazione della WebApp utilizzando **React**. Questa tecnologia è stata scelta per la sua flessibilità, la capacità di creare interfacce dinamiche e l’ampio supporto della community di sviluppatori.
-5. **Gestione del versionamento**: Collegamento del repository del progetto a **GitHub**, in modo da gestire in modo efficiente il versionamento del codice e facilitare la collaborazione e il monitoraggio delle modifiche.
-6. **Implementazione delle librerie**: Installazione e utilizzo delle librerie necessarie tramite **npm**, per garantire una corretta scrittura del codice e un’interfaccia intuitiva e responsive. Le librerie adottate sono state:
-   - **Semantic UI** per la progettazione dell’interfaccia grafica.
-   - **Vite** per la creazione rapida del progetto React.
-   - **Papaparse** per la gestione e l’elaborazione dei file CSV.
-   - **React-router-dom** per la navigazione tra le diverse pagine della WebApp.
-   - **Recharts** per la visualizzazione dei dati attraverso grafici chiari e interattivi.
-   - **React-markdown** per il rendering dei testi in formato markdown.
-   - **React-helmet-async** per gestire in modo dinamico i metadati delle pagine, come titolo, descrizione e parole chiave.
-7. **Salvataggio e aggiornamento**: Ogni modifica e aggiornamento dei contenuti e del codice è stato salvato e versionato tramite GitHub, garantendo una gestione ordinata e tracciabile dello sviluppo del progetto.
-
 ```mermaid
-graph TD
+flowchart TD
     A[Inizio] --> B[Ideazione dei contenuti]
     B --> C[Acquisizione da fonti normative e standard]
     C --> D[Redazione manuale per concetti emergenti]
-
-    E{Contenuti approvati?}
-    D --> E
-    E -->|Sì| F[Strutturazione in formato JSON (tesauro.json)]
-    E -->|No| C
-
-    F --> G[Generazione automatica file Markdown con script Python]
-    G --> H[Applicazione stile grafico con MkDocs]
-
-    H --> I[Revisione e approvazione del comitato editoriale]
+    D --> E{Contenuti approvati?}
+    E -- Sì --> F["Strutturazione in formato JSON (tesauro.json)"]
+    E -- No --> C
+    F --> G["Generazione Markdown con script Python"]
+    G --> H["Applicazione stile grafico con MkDocs"]
+    H --> I["Revisione e approvazione del comitato editoriale"]
     I --> J{Pull Request accettata?}
-    J -->|Sì| K[Merge su branch main]
-    J -->|No| D
-
+    J -- Sì --> K[Merge su branch main]
+    J -- No --> D
     K --> L[Distribuzione automatica su GitHub Pages]
     L --> M[Consultazione pubblica del tesauro]
     M --> N[Proposte di aggiornamento via Issues]
-
-    N --> O[Nuovo ciclo editoriale]
-    O --> B
+    N --> B
 ```
 ### Tecnologie adottate
 Le tecnologie utilizzate sono state selezionate per garantire l'efficacia e la qualità delle diverse fasi del progetto, offrendo strumenti adeguati sia per la creazione dei contenuti che per la loro gestione e distribuzione. Ecco una panoramica delle tecnologie principali e del loro contributo:
