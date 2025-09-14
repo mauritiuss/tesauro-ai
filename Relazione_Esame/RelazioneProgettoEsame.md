@@ -81,106 +81,49 @@ Il tesauro è pensato per un pubblico interdisciplinare che necessita di strumen
 
 ---
 
-### Sintesi
 Queste personas mostrano come il tesauro possa essere utile a:  
 
-- decisori politici (chiarezza normativa),  
-- tecnici (coerenza con standard),  
-- ricercatori e accademici (analisi concettuale),  
-- divulgatori e giornalisti (comunicazione corretta).  
+- Decisori politici (chiarezza normativa),  
+- Tecnici (coerenza con standard),  
+- Ricercatori e accademici (analisi concettuale),  
+- Divulgatori e giornalisti (comunicazione corretta).  
 
 In questo modo, il prodotto editoriale risponde a esigenze diverse ma complementari, rafforzando la sua funzione di strumento interdisciplinare.
 
-
 ### Modello di fruizione
 
-Per garantire l’efficacia del tesauro e la sua utilità per i destinatari individuati, sono stati definiti alcuni **requisiti di accettazione** e un modello di fruizione pensato per agevolare la consultazione interdisciplinare.
+Il tesauro è stato progettato per essere un prodotto editoriale digitale facilmente accessibile e consultabile da un pubblico eterogeneo. Per garantire l’efficacia del progetto, è stato scelto di renderlo disponibile online come sito pubblico, così da consentirne la fruizione da qualsiasi dispositivo connesso a Internet senza la necessità di software dedicati. Questo approccio assicura un accesso semplice e immediato, oltre a una consultazione sempre aggiornata.  
 
-#### Requisiti di accettazione
+Ogni voce del tesauro è presentata in forma bilingue (italiano e inglese) e strutturata in modo uniforme, con definizioni, relazioni semantiche e riferimenti normativi. La navigazione non si limita a un elenco statico di termini, ma offre diverse modalità di fruizione: è possibile cercare un termine per parola chiave o per ID, esplorare le relazioni semantiche tra concetti (*broader*, *narrower*, *related*), filtrare i risultati per lingua e accedere direttamente alle fonti normative o agli standard collegati. Questo modello di lettura è pensato per facilitare sia l’uso tecnico e normativo da parte di ingegneri e policy maker, sia l’analisi concettuale e divulgativa per ricercatori e giornalisti.  
 
-- **Accessibilità online**: il tesauro deve essere disponibile come sito pubblico e navigabile.  
-- **Aggiornabilità**: nuove voci devono poter essere aggiunte attraverso un processo chiaro e trasparente.  
-- **Bilinguismo**: ogni voce deve includere sia la definizione in italiano sia quella in inglese.  
-- **Tracciabilità**: tutte le modifiche devono essere documentate tramite versionamento e changelog.  
-- **Partecipazione**: gli utenti devono poter proporre aggiornamenti e ricevere giustificazioni pubbliche delle decisioni editoriali.
+L’aspetto innovativo del progetto risiede soprattutto nella dimensione partecipativa. Gli utenti non sono semplici lettori: possono proporre aggiornamenti tramite un sistema di feedback strutturato, corredando le loro proposte con motivazioni e fonti. Ogni decisione editoriale viene poi pubblicata con una giustificazione, garantendo trasparenza e tracciabilità. Inoltre, grazie all’integrazione con GitHub Actions, ogni modifica approvata viene automaticamente pubblicata online, rendendo il tesauro un documento “vivo” che evolve nel tempo.  
 
-#### Modelli di lettura e fruizione
-- **Consultazione tematica**: ricerca di termini per ID o per parola chiave.  
-- **Navigazione semantica**: esplorazione dei concetti attraverso relazioni *broader*, *narrower* e *related*.  
-- **Filtro per lingua**: possibilità di visualizzare definizioni in italiano, inglese o entrambe.  
-- **Allineamento normativo**: accesso diretto alle fonti (AI Act, ISO/IEC, NIST) collegate a ciascun termine.
-
-#### Standard di riferimento
-- **ISO/IEC 22989:2022** – Terminologia AI.  
-- **ISO/IEC 23894:2023** – Gestione del rischio in sistemi di IA.  
-- **NIST AI Risk Management Framework (2023)**.  
-- **AI Act europeo (Reg. UE 1689/2024)** e normative nazionali.  
-
-Questi standard garantiscono che la terminologia utilizzata sia coerente con documenti riconosciuti a livello internazionale.
-
-#### Aspetti di innovazione
-- **Processo di fruizione**: gli utenti non si limitano a leggere, ma possono partecipare attivamente con proposte di aggiornamento strutturate tramite template dedicati.  
-- **Trasparenza editoriale**: ogni decisione (approvazione o rifiuto) è pubblicata e motivata.  
-- **Aggiornabilità dinamica**: il workflow GitHub Actions consente di pubblicare automaticamente il sito a ogni modifica approvata.  
-- **Documentazione viva**: grazie a *CHANGELOG* e *tag versioni*, lo storico rimane sempre accessibile e navigabile.  
-
-In questo modo, il tesauro si configura non solo come un prodotto editoriale statico, ma come una piattaforma **collaborativa, tracciabile e innovativa**, in grado di evolvere insieme al linguaggio dell’intelligenza artificiale.
+In questo modo, la fruizione non è solo passiva ma collaborativa: il tesauro diventa una piattaforma aperta, trasparente e dinamica, capace di adattarsi alle trasformazioni del linguaggio e alle esigenze di comunità diverse.
 
 ### Canali di distribuzione
-Il tesauro è concepito come risorsa digitale multicanale, per raggiungere pubblici diversi e adattarsi a differenti contesti di fruizione.  
+Il tesauro è concepito come una risorsa digitale multicanale, pensata per raggiungere pubblici diversi e adattarsi a contesti di utilizzo differenti. Il canale principale è il web, grazie alla pubblicazione come sito statico generato con *MkDocs* e distribuito tramite *GitHub Pages*. Questa scelta assicura un accesso semplice, gratuito e immediato da qualsiasi dispositivo connesso a Internet, senza la necessità di installare software dedicati.  
 
-#### Canali principali
-- **Web**: pubblicazione principale tramite sito statico generato con *MkDocs* e distribuito su *GitHub Pages*.  
-- **Social**: condivisione di aggiornamenti e nuove versioni tramite canali istituzionali (es. LinkedIn o X/Twitter) per favorire la diffusione delle novità.  
-- **Repository GitHub**: punto di riferimento per gli esperti e contributori, che possono accedere direttamente al sorgente (`tesauro.json`) e al flusso editoriale.  
-- **Intranet accademica/istituzionale** (opzionale): possibile integrazione in contesti interni (università, enti di ricerca) come risorsa di riferimento per corsi o policy interne.  
+Accanto al sito, il progetto prevede la diffusione delle novità e delle nuove versioni anche attraverso i canali social istituzionali, come LinkedIn o X/Twitter, che consentono di raggiungere una comunità più ampia e favorire il dialogo con professionisti e ricercatori. Un ulteriore canale di distribuzione è rappresentato dal repository GitHub, che diventa il punto di riferimento per esperti e contributori: qui è possibile consultare il formato sorgente (`tesauro.json`), proporre modifiche e seguire lo sviluppo editoriale. In prospettiva, il tesauro potrebbe essere integrato anche in intranet accademiche o istituzionali, per supportare corsi universitari o policy interne.  
 
-#### Formati dati previsti
-- **JSON**: formato sorgente, strutturato e leggibile dalle macchine.  
-- **Markdown / WebBook**: formato di consultazione, ottimizzato per il web.  
-- **PDF** (generabile da MkDocs): per distribuzione offline e archiviazione istituzionale.
+Dal punto di vista dei formati, il tesauro nasce in **JSON**, un formato sorgente strutturato e leggibile dalle macchine che garantisce interoperabilità. A partire da questo, i contenuti vengono trasformati in **Markdown/WebBook**, ottimizzati per la fruizione online.
 
-#### Identità visuale e stile tipografico
-- **Tipografia**: caratteri sans-serif leggibili sul web (es. *Roboto*, *Inter*) con utilizzo di titoli ben gerarchizzati (H1, H2, H3).  
-- **Colori e layout**: interfaccia minimale, con palette neutra, per mettere in risalto il contenuto testuale.  
-- **Stile redazionale**:  
-  - Tono **formale e professionale**, adatto a documenti normativi e scientifici;  
-  - Uso coerente di termini bilingui (IT/EN);  
-  - Citazione sistematica delle fonti.
+Per quanto riguarda l’identità visiva, il sito segue uno stile chiaro, minimale e professionale. Sono stati scelti caratteri sans-serif come *Roboto* o *Inter*, che garantiscono leggibilità sul web, con titoli gerarchizzati per rendere immediata la navigazione tra i contenuti. La palette cromatica è neutra e sobria, con colori che non distraggono dal testo ma lo valorizzano. Lo stile redazionale mantiene un tono formale e coerente con la natura normativa e scientifica del progetto, con l’uso sistematico del bilinguismo (IT/EN) e la citazione accurata delle fonti.  
 
-In questo modo, il tesauro assume un’identità editoriale chiara e affidabile, comunicando rigore formale nei contenuti e innovazione nei processi di gestione.
+L’obiettivo è bilanciare **adesione a modelli riconosciuti** — come glossari istituzionali e standard internazionali — per trasmettere autorevolezza, con elementi di **innovazione** nella modalità di fruizione, che non si limita a una consultazione statica ma permette aggiornamenti dinamici e partecipazione attiva da parte degli utenti.
 
 ## Processo di Produzione
 
 ### Acquisizione dei contenuti
 
-La costruzione del tesauro si basa su un insieme selezionato di fonti normative, standard tecnici e documenti concettuali. La scelta delle fonti tiene conto sia della loro rilevanza scientifica e istituzionale, sia del costo di acquisizione in termini di tempo e risorse.
+L’acquisizione dei contenuti del tesauro è avvenuta attraverso un approccio misto, che combina fonti libere, standard internazionali, processi semi-automatici e redazione manuale.  
 
-#### Fonti libere e disponibili pubblicamente
-- **AI Act europeo (Reg. UE 1689/2024)**: testo legislativo disponibile in formato digitale multilingue sul portale EUR-Lex.  
-- **Convenzione quadro del Consiglio d’Europa sull’IA**: documento accessibile gratuitamente sul sito del Consiglio d’Europa.  
-- **GPAI Codes of Practice**: linee guida rese disponibili pubblicamente dal partenariato globale sull’IA.  
-- **NIST AI Risk Management Framework (2023)**: pubblicato in modalità open access.  
+La fase iniziale ha previsto la selezione delle fonti normative e di policy più rilevanti, tra cui l’AI Act europeo, la Convenzione quadro del Consiglio d’Europa, i GPAI Codes of Practice e il NIST AI Risk Management Framework. Tutti questi documenti, disponibili liberamente online, hanno rappresentato la base normativa di riferimento. A queste si sono aggiunti gli standard ISO/IEC 22989:2022 e 23894:2023, fondamentali per la coerenza terminologica e metodologica, ma soggetti a vincoli economici e di licenza, che hanno reso necessaria un’attenta scelta dei concetti chiave da integrare.  
 
-Queste fonti costituiscono la base normativa e policy del tesauro, senza costi diretti di acquisizione.
+Parallelamente, alcune informazioni sono state generate in maniera semi-automatica: strumenti di traduzione assistita hanno supportato la produzione delle versioni bilingui, mentre parser per documenti strutturati (in XML o HTML) hanno permesso di estrarre in modo più rapido definizioni e riferimenti normativi.  
 
-#### Fonti standard internazionali (parzialmente a pagamento)
-- **ISO/IEC 22989:2022** (terminologia AI).  
-- **ISO/IEC 23894:2023** (gestione del rischio nei sistemi di IA).  
+Nonostante il contributo delle tecnologie, una parte significativa del lavoro è rimasta manuale. Concetti emergenti come *IA agentica* o *IA generativa* hanno richiesto una definizione redazionale ad hoc, così come le relazioni semantiche (*broader*, *narrower*, *related*), difficili da automatizzare in modo affidabile. Anche le giustificazioni editoriali e le note esplicative sono state redatte manualmente, con l’obiettivo di garantire trasparenza e rigore.  
 
-Questi standard sono di riferimento imprescindibile, ma la loro acquisizione comporta un costo economico. L’integrazione nel tesauro avviene selezionando i concetti chiave, nel rispetto delle licenze di utilizzo.
-
-#### Contenuti generabili automaticamente
-- **Metadati di traduzione bilingue**: parte delle traduzioni inglese-italiano può essere supportata da strumenti di traduzione assistita (CAT tools), che velocizzano il processo mantenendo la coerenza terminologica.  
-- **Estratti da documenti pubblici**: l’uso di parser per documenti in XML/HTML consente di importare automaticamente definizioni e riferimenti normativi.
-
-#### Contenuti da redigere manualmente
-- **Concetti emergenti** (es. *IA agentica*, *IA generativa*): non sempre presenti in fonti istituzionali, richiedono un lavoro di definizione e contestualizzazione redazionale.  
-- **Relazioni semantiche (broader, narrower, related)**: la classificazione non è automatizzabile in modo affidabile e deve essere validata editorialmente.  
-- **Note esplicative e giustificazioni**: ogni decisione editoriale (approvazione, rifiuto, modifica) viene redatta manualmente dal comitato e pubblicata a beneficio degli utenti.
-
-Questo approccio ibrido assicura al tesauro sia **rigore istituzionale**, sia **flessibilità innovativa** nell’inclusione di concetti nuovi.
-
+In sintesi, l’approccio adottato ha permesso di bilanciare **rigore istituzionale** e **flessibilità innovativa**: da un lato l’uso di fonti ufficiali e standard internazionali, dall’altro l’apertura all’inclusione di concetti nuovi e in continua evoluzione, che rendono il tesauro uno strumento realmente vivo e interdisciplinare.
 
 ### Gestione documentale
 Il flusso di gestione documentale del tesauro è stato progettato per garantire **trasparenza, aggiornabilità e tracciabilità** in ogni fase del processo. Le principali tappe sono:
