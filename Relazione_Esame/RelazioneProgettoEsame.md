@@ -219,19 +219,19 @@ flowchart TD
     N --> B
 ```
 ### Tecnologie adottate
-Le tecnologie utilizzate sono state selezionate per garantire l'efficacia e la qualità delle diverse fasi del progetto, offrendo strumenti adeguati sia per la creazione dei contenuti che per la loro gestione e distribuzione. Ecco una panoramica delle tecnologie principali e del loro contributo:
+Lo sviluppo del tesauro ha richiesto l’integrazione di diverse tecnologie, ciascuna delle quali ha contribuito a raggiungere gli obiettivi descritti negli scenari d’uso.
 
-| **Tecnologia**  | **Contributo principale** |
-|-----------------|---------------------------|
-| **React** | **Sviluppo della WebApp.** React è stato scelto per la sua efficienza nella creazione di interfacce dinamiche e responsive. Grazie alla sua architettura basata su componenti, ha permesso di costruire un’app modulare e facilmente manutenibile. |
-| **GitHub**    | **Gestione del repository e del versioning.** GitHub è stato utilizzato per il controllo della versione del progetto, consentendo una gestione efficace del codice. |
-| **Semantic UI** | **Interfaccia grafica e stile visivo.** Questo framework è stato utilizzato per creare un design moderno e coerente, offrendo componenti UI predefiniti per una WebApp responsive e intuitiva. |
-| **Recharts**   | **Creazione di grafici interattivi.** Questa libreria è stata utilizzata per visualizzare dati in modo chiaro e intuitivo, offrendo grafici personalizzabili e reattivi. |
-| **react-router-dom** | **Gestione della navigazione.**  È stato utilizzato per implementare un sistema di routing dinamico, permettendo la navigazione fluida tra le diverse sezioni della WebApp. |
-| **Papaparse** | **Gestione dei file CSV.** Questa libreria ha semplificato l’importazione e l’elaborazione dei dati provenienti da file CSV, rendendo efficiente la lettura e la trasformazione dei dati strutturati. |
-| **react-markdown** | **Visualizzazione di contenuti testuali.** È stata utilizzata per convertire il contenuto dei testi in formato Markdown, garantendo una resa leggibile direttamente nella WebApp. |
-| **react-helmet-async** | **Gestione dei metadati delle pagine.** Questa libreria è stata utilizzata per definire i metadati di ogni pagina della WebApp, come titolo, charset, viewport e descrizione. Sebbene la WebApp sia destinata agli utenti e non indicizzata dai motori di ricerca, questi metadati migliorano l’organizzazione interna, la chiarezza delle informazioni e l'ottimizzazione della visualizzazione su diversi dispositivi. Questo approccio ha facilitato l'organizzazione dei contenuti, garantendo coerenza tra i diversi file.|
-| **GPT-4** | **Acquisizione e generazione dei contenuti.** Il modello di intelligenza artificiale GPT-4 di OpenAI è stato impiegato per raccogliere informazioni e generare testi chiari, coerenti e pertinenti. |
+| Tecnologia       | Fase di utilizzo                                | Contributo | Scenari supportati |
+|------------------|-------------------------------------------------|------------|---------------------|
+| **JSON**         | Formato sorgente per le voci del tesauro         | Strutturazione dei dati (ID, definizioni IT/EN, fonti, relazioni) | Policy maker (uniformità terminologica); Ingegneri (integrazione tecnica) |
+| **Python**       | Generazione automatica dei file Markdown         | Automazione, riduzione errori, aggiornamenti rapidi | Ricercatori (consultazione strutturata); Giornalisti (definizioni aggiornate) |
+| **Markdown**     | Rappresentazione dei contenuti editoriali        | Facilità di scrittura e leggibilità umana | Tutti i destinatari (accessibilità dei testi) |
+| **MkDocs**       | Pubblicazione del sito statico                   | Interfaccia web chiara, responsive e navigabile | Tutti i destinatari (consultazione online) |
+| **GitHub Pages** | Hosting e distribuzione automatica               | Aggiornamento continuo e accesso pubblico | Tutti i destinatari (fruizione aperta e gratuita) |
+| **Git + GitHub** | Versionamento, collaborazione, workflow editoriale | Tracciabilità storica, Issues e Pull Request per feedback | Comitato editoriale (approvazione/rifiuto modifiche) |
+| **Template Issues/PR** | Raccolta feedback e proposte di aggiornamento | Trasparenza, motivazioni obbligatorie, giustificazioni pubbliche | Contributori esterni, revisori |
+| **CHANGELOG + Tag** | Documentazione delle versioni                  | Storico chiaro delle modifiche con semver | Tutti i destinatari (monitoraggio evoluzioni) |
+| **Tema MkDocs**  | Identità visuale e tipografia                    | Layout sobrio, font leggibili, gerarchie di titoli | Tutti i destinatari (esperienza di lettura) |
 
 ### Esecuzione del flusso
 Tutti i materiali, script e configurazioni necessari per riprodurre il flusso di produzione documentale sono disponibili nel repository GitHub associato al progetto disponibile a questo [link](https://github.com/mauritiuss/health-dashboard).
