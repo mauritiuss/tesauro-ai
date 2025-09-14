@@ -221,17 +221,17 @@ flowchart TD
 ### Tecnologie adottate
 Lo sviluppo del tesauro ha richiesto l’integrazione di diverse tecnologie, ciascuna delle quali ha contribuito a raggiungere gli obiettivi descritti negli scenari d’uso.
 
-| Tecnologia       | Fase di utilizzo                                | Contributo | Scenari supportati |
-|------------------|-------------------------------------------------|------------|---------------------|
-| **JSON**         | Formato sorgente per le voci del tesauro         | Strutturazione dei dati (ID, definizioni IT/EN, fonti, relazioni) | Policy maker (uniformità terminologica); Ingegneri (integrazione tecnica) |
-| **Python**       | Generazione automatica dei file Markdown         | Automazione, riduzione errori, aggiornamenti rapidi | Ricercatori (consultazione strutturata); Giornalisti (definizioni aggiornate) |
-| **Markdown**     | Rappresentazione dei contenuti editoriali        | Facilità di scrittura e leggibilità umana | Tutti i destinatari (accessibilità dei testi) |
-| **MkDocs**       | Pubblicazione del sito statico                   | Interfaccia web chiara, responsive e navigabile | Tutti i destinatari (consultazione online) |
-| **GitHub Pages** | Hosting e distribuzione automatica               | Aggiornamento continuo e accesso pubblico | Tutti i destinatari (fruizione aperta e gratuita) |
-| **Git + GitHub** | Versionamento, collaborazione, workflow editoriale | Tracciabilità storica, Issues e Pull Request per feedback | Comitato editoriale (approvazione/rifiuto modifiche) |
-| **Template Issues/PR** | Raccolta feedback e proposte di aggiornamento | Trasparenza, motivazioni obbligatorie, giustificazioni pubbliche | Contributori esterni, revisori |
-| **CHANGELOG + Tag** | Documentazione delle versioni                  | Storico chiaro delle modifiche con semver | Tutti i destinatari (monitoraggio evoluzioni) |
-| **Tema MkDocs**  | Identità visuale e tipografia                    | Layout sobrio, font leggibili, gerarchie di titoli | Tutti i destinatari (esperienza di lettura) |
+| Tecnologia       | Fase di utilizzo                                | Contributo |
+|------------------|-------------------------------------------------|------------|
+| **JSON**         | Formato sorgente per le voci del tesauro         | Strutturazione dei dati (ID, definizioni IT/EN, fonti, relazioni) |
+| **Python**       | Generazione automatica dei file Markdown         | Automazione, riduzione errori, aggiornamenti rapidi |
+| **Markdown**     | Rappresentazione dei contenuti editoriali        | Facilità di scrittura e leggibilità umana | 
+| **MkDocs**       | Pubblicazione del sito statico                   | Interfaccia web chiara, responsive e navigabile |
+| **GitHub Pages** | Hosting e distribuzione automatica               | Aggiornamento continuo e accesso pubblico |
+| **Git + GitHub** | Versionamento, collaborazione, workflow editoriale | Tracciabilità storica, Issues e Pull Request per feedback |
+| **Template Issues/PR** | Raccolta feedback e proposte di aggiornamento | Trasparenza, motivazioni obbligatorie, giustificazioni pubbliche |
+| **CHANGELOG + Tag** | Documentazione delle versioni                  | Storico chiaro delle modifiche con semver |
+| **Tema MkDocs**  | Identità visuale e tipografia                    | Layout sobrio, font leggibili, gerarchie di titoli |
 
 ### Esecuzione del flusso
 Tutti i materiali, script e configurazioni necessari per riprodurre il flusso di produzione documentale sono disponibili nel repository GitHub associato al progetto disponibile a questo [link](https://github.com/mauritiuss/health-dashboard).
