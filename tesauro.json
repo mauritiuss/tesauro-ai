@@ -55,6 +55,23 @@
       "relations": { "broader": ["AI001"], "narrower": [], "related": []
       },
       "variants": ["AI generativa", "Generative Artificial Intelligence"]
+    },
+    {
+      "id": "AI005",
+      "english": "Risk-based approach",
+      "italian": "Approccio basato sul rischio",
+      "definition": {
+        "en": "A governance and management approach for AI that tailors requirements, controls, and mitigation measures to the level of anticipated risk, considering use context, potential impacts, and likelihood of harm.",
+        "it": "Metodo di gestione e governance dell’IA che modula requisiti, controlli e misure di mitigazione in funzione del livello di rischio atteso, considerando contesto d’uso, impatti potenziali e probabilità di danno."
+      },
+      "sources": [
+        "AI Act (Reg. UE 1689/2024)",
+        "NIST AI Risk Management Framework (2023)",
+        "ISO/IEC 23894:2023"
+      ],
+      "relations": { "broader": ["AI001"], "narrower": [], "related": ["AI002"]
+      },
+      "variants": ["Approccio risk-based", "Risk based approach"]
     }
   ]
 }
