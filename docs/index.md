@@ -16,7 +16,7 @@ Questo progetto nasce come risorsa digitale strutturata con l'obiettivo di:
   1. Definizione in italiano e in inglese
   2. Relazioni semantiche (broader / narrower / related)
   3. Varianti terminologiche
-  4. Fonti normative e standard di riferimento
+  4. Fonti normative e standard di riferimento!!!!!!!!
 
 --- 
 
