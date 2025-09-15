@@ -7,6 +7,12 @@ Il versionamento segue lo schema **MAJOR.MINOR.PATCH**:
 - **MINOR**: nuove voci, nuove funzionalità editoriali.
 - **PATCH**: correzioni minori o aggiornamenti a voci esistenti.
 
+## [0.4.0] - 2025-09-13
+### Aggiunto
+- Nuova voce AI005 "Risk-based approach / Approccio basato sul rischio"
+- Fonti: AI Act, NIST AI RMF, ISO/IEC 23894
+- Relazioni semantiche: broader → AI001, related → AI002
+
 ## [0.3.0] - 2025-09-13
 ### Aggiunto
 - Nuova voce AI004 "Generative AI / IA generativa" con definizione bilingue
