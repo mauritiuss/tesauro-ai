@@ -11,7 +11,7 @@ Questo progetto nasce come risorsa digitale strutturata con l'obiettivo di:
 
 ## Come consultare il tesauro
 
-- Vai alla sezione **Termini --> Indice** per esplorare le voci disponibili.
+- Vai alla sezione **Termini → Indice** per esplorare le voci disponibili.
 - Ogni voce contiene:
     1. Definizione in italiano e in inglese
     2. Relazioni semantiche (*broader / narrower / related*)
