@@ -38,7 +38,7 @@ Queste relazioni permettono di navigare il tesauro in modo dinamico, scoprendo n
 Il progetto è ospitato su [GitHub](https://github.com/mauritiuss/tesauro-ai). 
 Chiunque può proporre modifiche o nuove voci:
 
-- Aprendo una **Issue** con motivazioni e fonti obbligatorie;
+- Aprendo una [Issue](https://github.com/mauritiuss/tesauro-ai/issues) con motivazioni e fonti obbligatorie;
 - Seguendo il flusso editoriale descritto nel file [CONTRIBUTING.md](https://github.com/mauritiuss/tesauro-ai/blob/main/CONTRIBUTING.md).
 
 ---
