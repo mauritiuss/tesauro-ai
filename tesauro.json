@@ -5,8 +5,8 @@
       "english": "Artificial Intelligence",
       "italian": "Intelligenza artificiale",
       "definition": {
-        "en": "A system that ...",
-        "it": "Un sistema che ..."
+        "en": "An AI system is an engineered, machine-based system that, for a given set of human-defined objectives, generates outputs such as predictions, recommendations or decisions that can influence real or virtual environments. AI systems are designed to operate with varying levels of autonomy.",
+        "it": "Un sistema di IA è un sistema ingegnerizzato, basato su macchine, che, per un insieme di obiettivi definiti dall’essere umano, genera output quali previsioni, raccomandazioni o decisioni che possono influenzare ambienti reali o virtuali. I sistemi di IA sono progettati per operare con livelli variabili di autonomia."
       },
       "sources": [ "OECD Recommendation on AI (2019)", "ISO/IEC 22989:2022" ],
       "relations": { "broader": [], "narrower": ["AI002", "AI004"], "related": [] },
@@ -17,8 +17,8 @@
       "english": "AI Act",
       "italian": "Regolamento europeo sull’IA",
       "definition": {
-        "en": "European Union Regulation ...",
-        "it": "Regolamento dell’Unione Europea ..."
+        "en": "AI system’ means a machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments.",
+        "it": "Per “sistema di IA” si intende un sistema basato su macchine, progettato per operare con livelli variabili di autonomia e che può mostrare capacità di adattamento dopo la messa in servizio, e che, per obiettivi espliciti o impliciti, trae inferenze dagli input che riceve su come generare output quali previsioni, contenuti, raccomandazioni o decisioni che possono influenzare ambienti fisici o virtuali."
       },
       "sources": [ "AI Act, Regulation (EU) 2024/1689" ],
       "relations": { "broader": ["AI001"], "narrower": [], "related": [] },
