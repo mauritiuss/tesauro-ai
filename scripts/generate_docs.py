@@ -66,6 +66,7 @@ for t in terms:
     ]
     if defn_it:
         page_lines.append(f"**IT**: {defn_it}")
+        page_lines.append("")  # forza un a capo tra IT e EN
     if defn_en:
         page_lines.append(f"**EN**: {defn_en}")
 
