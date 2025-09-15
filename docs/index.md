@@ -21,12 +21,11 @@ Questo progetto nasce come risorsa digitale strutturata con l'obiettivo di:
 ### Relazioni semantiche
 
 Ogni voce del tesauro non è isolata, ma è collegata ad altre attraverso tre tipi di relazioni semantiche:
+
 - **Broader (più ampio)**: indica un concetto di livello superiore, più generale.  
   *Esempio: “Intelligenza artificiale” è più ampio di “Apprendimento automatico”.*
-
 - **Narrower (più specifico)**: indica un concetto di livello inferiore, più dettagliato.  
   *Esempio: “Apprendimento supervisionato” è più specifico di “Apprendimento automatico”.*
-
 - **Related (correlato)**: indica un concetto connesso, ma né più ampio né più specifico.  
   *Esempio: “Etica dell’IA” è correlata a “Regolamentazione dell’IA”.*
 
