@@ -7,6 +7,12 @@ Il versionamento segue lo schema **MAJOR.MINOR.PATCH**:
 - **MINOR**: nuove voci, nuove funzionalità editoriali.
 - **PATCH**: correzioni minori o aggiornamenti a voci esistenti.
 
+## [0.5.0] - 2025-09-15
+### Aggiunto
+- Nuova voce AI006 "Human oversight / Supervisione umana"
+- Fonti: AI Act, NIST AI RMF, ISO/IEC 23894
+- Relazioni: broader → AI001; related → AI002, AI005
+
 ## [0.4.0] - 2025-09-13
 ### Aggiunto
 - Nuova voce AI005 "Risk-based approach / Approccio basato sul rischio"
