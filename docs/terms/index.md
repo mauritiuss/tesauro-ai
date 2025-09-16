@@ -7,3 +7,4 @@
 | [AI003](./AI003.md) | Agentic AI | IA agentica |
 | [AI004](./AI004.md) | Generative AI | IA generativa |
 | [AI005](./AI005.md) | Risk-based approach | Approccio basato sul rischio |
+| [AI006](./AI006.md) | Human oversight | Supervisione umana |
